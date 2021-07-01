@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>CORS check</title>
+  </head>
+  <body>
+    <div class="cors"></div>
+    <button type="button" name="button" onclick="check()">Submit</button>
+    <button type="button" name="button" onclick="remove()">Remove</button>
+    <script type="text/javascript">
+      async function check() {
+        try {
+          let res = await fetch("http://localhost:3000/corscheck");
+          let output = await res.text();
+          document.querySelector(".cors").innerText = output;
+        } catch (e) {
+          console.log(e);
+        }
+      }
+      function remove() {
+        document.querySelector(".cors").innerText = null;
+      }
+    </script>
+  </body>
+</html>

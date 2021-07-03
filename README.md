@@ -7,4 +7,4 @@ To run any script file:
 * Run ```` npm run index ````.
 * All files listen at port 3000.
 
-For checking Question code, refer [cteWebD.](https://github.com/VedantBang/ctewebd)
+Refer [cteWebD.](https://github.com/VedantBang/ctewebd)

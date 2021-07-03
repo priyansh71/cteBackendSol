@@ -12,7 +12,7 @@ app.use("/hungry/pizza", (req, res, next) => {
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Headers": "*",
     "Access-Control-Expose-Headers": "*",
-    // Expose headers makes the header sent by the server 'available' on the front-end.
+    /* Expose headers makes the header sent by the server 'available' on the front-end. */
   });
   next();
 });
